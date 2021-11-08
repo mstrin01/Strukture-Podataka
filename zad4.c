@@ -206,27 +206,7 @@ int suma(pozicija p1, pozicija p2, pozicija p3)
 		temp = temp->next;
 	}
 
-	
-	/* primjer sa int
-	* while(p1->next || p2->next){
-	* 
-		if(p1->next==NULL&&p2->next!=NULL)
-			{
-				q->koeficijent=p2->koeficijent;
-				q->potencija=p2->potencija;
-				p2=p2->next;      
-			}
-			if(p2->next==NULL&&p1->next!=NULL)
-			{
-				q->koeficijent=p1->koeficijent;
-				q->potencija=p1->potencija;
-				p1=p1->next;
-			}
-			p3->next=q;
-			p3=q;
-			p3->next=NULL;
-			}
-		*/
+
 	
 	
 
