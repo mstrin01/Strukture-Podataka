@@ -9,8 +9,8 @@ typedef struct _polinom {
 	pozicija next;
 }polinom;
 
-int unosPrvi(pozicija p);
-int unosDrugi(pozicija p);
+int unosPrvog(pozicija p);
+int unosDrugog(pozicija p);
 int suma(pozicija p);
 int produkt(pozicija p);
 int ispis(pozicija p);
