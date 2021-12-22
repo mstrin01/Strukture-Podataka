@@ -171,14 +171,14 @@ posL PronadiZadnji(posL head)
 
 int umetni(posL head, int broj)
 {
-	posL prvi = NULL;
-	prvi = (posL)malloc(sizeof(lista));
+	posL q = NULL;
+	q = (posL)malloc(sizeof(lista));
 
-	if (prvi == NULL)
+	if (q == NULL)
 		return -1;
-	prvi->el = broj;
-	prvi->next = head->next;
-	head->next = prvi;
+	q->el = broj;
+	q->next = head->next;
+	head->next = q;
 
 	return 0;
 }
@@ -189,7 +189,7 @@ int ispisDat(posL p1, posL p2, posL p3, char* imeDat)
 	f = fopen(imeDat, "w");
 	if (f == NULL)
 	{
-		printf("Neuspjesno otvaranje datoteke!");
+		printf("Greska!");
 		return -1;
 	}
 
